@@ -1,9 +1,21 @@
 {{ define "main" }}
-  <header class="homepage-header">
-    <div class="homepage-header__contents">
-      <a class="homepage-header__permalink" href="{{.Site.BaseURL}}">
-        <h1 class="homepage-header__title">jshakespeare.com</h1>
-      </a>
-      <p class="homepage-header__subtitle">James Shakespeare is a freelance product engineer.</p>
+  <main class="page">
+      <div class="hero">
+        <a class="hero__permalink" href="{{.Site.BaseURL}}">
+          <h1 class="hero__site-name">▰▰ jshakespeare.com</h1>
+        </a>
+        <p class="hero__intro">James Shakespeare is a product engineer from London.</p>
+        <p>I build things that people like to use.</p>
+        <p><span class="hero__availability-indicator" aria-hidden="true">⬤</span> I'm currently accepting freelance contracts. You should <a href="mailto:j@jshakespeare.com">email me</a> if you need a product engineering specialist for your next project.</p>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="/about/">Services</a></li>
+            <li class="nav__item"><a href="/about/">Projects</a></li>
+            <li class="nav__item"><a href="/about/">About</a></li>
+            <li class="nav__item"><a href="/about/">Posts</a></li>
+          </ul>
+        </nav>
+        <hr class="hero__hr">
+      </div>
   </main>
 {{ end }}

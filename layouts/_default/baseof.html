@@ -33,7 +33,8 @@
     {{ if .Date }}<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}" />{{ end }}
     {{ end }}
     <meta name="twitter:site" content="@jeshake">
-    {{ with resources.Get "sass/main.scss" | toCSS | minify }}
+    {{ $options := dict "transpiler" "dartsass" }}
+    {{ with resources.Get "sass/main.scss" | toCSS $options | minify }}
     <style>{{ .Content | safeCSS }}</style>
     {{ end }}
     <link rel="alternate" type="application/rss+xml" title="jshakespeare.com blog RSS" href="/posts/index.xml" />
@@ -41,7 +42,6 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
-    <a href="#main" class="skip-link">Skip to content</a>
     <!-- Code that all your templates share, like a header -->
     {{ block "main" . }}
       <!-- The part of the page that begins to differ between templates -->

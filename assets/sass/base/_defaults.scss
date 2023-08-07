@@ -1,0 +1,76 @@
+:root {
+  --background: #efede6;
+  --foreground: #2c1902;
+  --accent-1: #3c3ce9;
+  --accent-2: #c0176b;
+
+  @media (prefers-color-scheme: dark) {
+    --background: #110805;
+    --foreground: #ecb7b7;
+    --accent-1: #adcce3;
+    --accent-2: #db3f8d;
+  }
+}
+
+* {
+  box-sizing: border-box;
+
+  &:focus {
+    outline: 0.25rem solid var(--accent-2, black);
+  }
+
+  &:active {
+    outline: none;
+  }
+}
+
+::selection {
+  background: var(--accent-2, black);
+  color: var(--background, white);
+}
+
+body {
+  background-color: var(--background, white);
+  color: var(--foreground, black);
+}
+
+img {
+  max-width: 100%;
+}
+
+a, label {
+  color: var(--accent-1);
+  cursor: pointer;
+  text-decoration: underline;
+  
+  &:hover {
+    color: var(--accent-2);
+  }
+}
+
+figure {
+  margin: 0 auto 2em;
+
+  img {
+    display: block;
+    margin: auto;
+  }
+
+  figcaption {
+    margin-top: 1.5em;
+    font-size: 0.8em;
+
+    p {
+      line-height: 1;
+    }
+  }
+}
+
+code,
+pre {
+  background: rgba(0, 0, 0, 0.05);
+
+  @media (prefers-color-scheme: dark) {
+    background: rgba(0, 0, 0, 0.25);
+  }
+}

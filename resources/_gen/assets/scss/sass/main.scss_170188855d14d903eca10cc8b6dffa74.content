@@ -1,1 +1,1 @@
-body{background:red;color:blue}
+body{font-family:pt sans;background:#eae7da;color:#2c1902}.page{max-width:60em;margin:0 auto;padding:0 2em}.hero{font-size:1.25em;margin:4em 0}.hero__permalink{text-decoration:none;color:inherit}.hero__site-name{font-size:1em;margin:0 0 1em}.hero__intro{font-family:overpass;font-size:3rem;font-weight:600;margin:0;line-height:1}
