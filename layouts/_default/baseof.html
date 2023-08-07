@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6245948-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-6245948-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
+    <meta property="og:site_name" content="James Shakespeare">
+    <meta property="og:locale" content="{{ .Site.LanguageCode }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <title>{{ if .Title }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}" />
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}"/>
+    {{ if .Params.featured_image }}
+    <meta name="twitter:card" content="summary_large_image"></meta>
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{.Params.featured_image}}">
+    {{ if .Params.featured_image_alt }}<meta name="twitter:image:alt" content="{{ .Params.featured_image_alt }}">{{end}}
+    {{ else }}
+    <meta name="twitter:card" content="summary"></meta>
+    <meta property="og:image" content="{{ .Site.BaseURL }}ogimage.png">
+    {{ end }}
+    {{ if eq .Section "posts" }}
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="James Shakespeare" />
+    {{ if .Date }}<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}" />{{ end }}
+    {{ end }}
+    <meta name="twitter:site" content="@jeshake">
+    {{ with resources.Get "sass/main.scss" | toCSS | minify }}
+    <style>{{ .Content | safeCSS }}</style>
+    {{ end }}
+    <link rel="alternate" type="application/rss+xml" title="jshakespeare.com blog RSS" href="/posts/index.xml" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <!-- Code that all your templates share, like a header -->
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+    {{ block "footer" . }}
+      <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+      <footer class="footer">
+        <div class="footer__contents">
+          <span>© <a href="/">James Shakespeare</a> {{ dateFormat "2006" now }}</span>
+          <ul class="footer__links">
+              <li class="footer__link"><a href="/posts/index.xml">RSS</a></li>
+              <li class="footer__link"><a href="https://twitter.com/jeshake">Twitter</a></li>
+          </ul>
+        </div>
+      </footer>
+    {{ end }}
+  </body>
+</html>
