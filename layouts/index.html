@@ -1,21 +1,39 @@
 {{ define "main" }}
-  <main class="page">
-      <div class="hero">
-        <a class="hero__permalink" href="{{.Site.BaseURL}}">
-          <h1 class="hero__site-name">▰▰ jshakespeare.com</h1>
-        </a>
-        <p class="hero__intro">James Shakespeare is a product engineer from London.</p>
-        <p>I build things that people like to use.</p>
-        <p><span class="hero__availability-indicator" aria-hidden="true">⬤</span> I'm currently accepting freelance contracts. You should <a href="mailto:j@jshakespeare.com">email me</a> if you need a product engineering specialist for your next project.</p>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="/about/">Services</a></li>
-            <li class="nav__item"><a href="/about/">Projects</a></li>
-            <li class="nav__item"><a href="/about/">About</a></li>
-            <li class="nav__item"><a href="/about/">Posts</a></li>
-          </ul>
-        </nav>
-        <hr class="hero__hr">
-      </div>
-  </main>
+  <div class="hero">
+    <a class="hero__permalink" href="{{.Site.BaseURL}}">
+      <h1 class="hero__site-name">▰▰ jshakespeare.com</h1>
+    </a>
+    <p class="hero__intro">James Shakespeare is a software engineer and so can you!</p>
+    <p>I make websites that are easy to use. I live in <s>Brooklyn, NY</s> southeast London. I sporadically <a href="/posts/">write things</a>.</p>
+    <p><a href="https://codepen.io/jshakes/pen/gOQJxQK" class="hero__availability-indicator" aria-hidden="true" target="_blank"></a> I'm currently accepting freelance contracts. You should <a href="mailto:j@jshakespeare.com">email me</a> if you need a product engineering specialist for your next project.</p>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="/about/">Services</a></li>
+        <li class="nav__item"><a href="/about/">Projects</a></li>
+        <li class="nav__item"><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+    <hr class="hero__hr">
+  </div>
+  <h2>About me</h2>
+  <p>I have over twelve years of experience building software at startups, agencies, and as a freelancer. I specialize in browser-based technology and I mostly write code using languages like HTML, CSS, and JavaScript (yes, TypeScript too) and frameworks like React, but I know how to use the right tool for the job. This website loads no JavaScript whatsoever.</p>
+  <p>I'm often also involved in shaping the design and user experience of the things I build.</p>
+  <p><a href="/about/">Read more</a></p>
+  <section class="homepage-content__section">
+    <h2 class="homepage-content__section-heading">Recent posts</h2>
+    <!-- Ranges through content/posts/*.md -->
+    {{ $currentYear := now.Year }}
+    {{ $lastYear := add $currentYear -2 }}
+    {{ $posts := where .Site.RegularPages "Type" "post" }}
+    {{ $recentPosts := where .Site.RegularPages "Date.Year" "ge" $lastYear }}
+    <ul class="post-list">
+      {{ range $recentPosts }}
+      <li class="post-list__item">
+        <a href="{{.Permalink}}" class="post-list__link">{{.Title}}</a>
+        <time datetime="{{.Date}}" class="post-list__date">{{.Date.Format "2 January 2006"}}</time>
+      </li>
+    {{ end }}
+    </ul>
+    <p><a class="cta" href="/posts/">Archive</a></p>
+  </section>
 {{ end }}

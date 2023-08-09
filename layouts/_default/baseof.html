@@ -1,15 +1,6 @@
 <!doctype html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6245948-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-6245948-1');
-    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="{{ if .Title }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
@@ -42,18 +33,15 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
-    <!-- Code that all your templates share, like a header -->
-    {{ block "main" . }}
-      <!-- The part of the page that begins to differ between templates -->
-    {{ end }}
+    <main class="page">
+      {{ block "main" . }}{{ end }}
+    </main>
     {{ block "footer" . }}
-      <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
-      <footer class="footer">
+      <footer class="footer page">
         <div class="footer__contents">
           <span>© <a href="/">James Shakespeare</a> {{ dateFormat "2006" now }}</span>
           <ul class="footer__links">
               <li class="footer__link"><a href="/posts/index.xml">RSS</a></li>
-              <li class="footer__link"><a href="https://twitter.com/jeshake">Twitter</a></li>
           </ul>
         </div>
       </footer>
