@@ -1,3 +1,9 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://jshakespeare.com/"
+languageCode = "en"
+title = "James Shakespeare"
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+[permalinks]
+posts = "/:slug"

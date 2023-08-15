@@ -1,4 +1,6 @@
 @use './base/defaults';
+@use './base/normalize';
+@use './base/pygments';
 @use './common/media';
 
 html {
@@ -134,6 +136,10 @@ body {
 
 .post-list__link {
 	display: block;
+
+	&:visited {
+		color: darkblue;
+	}
 }
 
 .sidebar__container {

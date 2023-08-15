@@ -69,8 +69,33 @@ figure {
 code,
 pre {
   background: rgba(0, 0, 0, 0.05);
+  font-family: 'Ubuntu Mono';
 
   @media (prefers-color-scheme: dark) {
     background: rgba(0, 0, 0, 0.25);
   }
 }
+
+code {
+  line-height: 2;
+  padding: 0 0.333333em;
+  display: inline-block;
+}
+
+pre {
+  padding: 2em;
+  margin: 2em 2em * -1;
+  overflow: auto;
+  white-space: pre;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  font-size: 1em;
+
+  code {
+    background: none;
+    padding: 0;
+  }
+}
+
