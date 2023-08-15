@@ -1,18 +1,9 @@
 {{ define "main" }}
   <div class="hero">
-    <a class="hero__permalink" href="{{.Site.BaseURL}}">
-      <h1 class="hero__site-name">▰▰ jshakespeare.com</h1>
-    </a>
-    <p class="hero__intro">James Shakespeare is a software engineer and so can you!</p>
-    <p>I make websites that are easy to use. I live in <s>Brooklyn, NY</s> southeast London. I sporadically <a href="/posts/">write things</a>.</p>
+    <p class="hero__intro">James Shakespeare is a software engineer from London</p>
+    <p>I make websites that are easy to use. I sporadically <a href="/posts/">write things</a>.</p>
     <p><a href="https://codepen.io/jshakes/pen/gOQJxQK" class="hero__availability-indicator" aria-hidden="true" target="_blank"></a> I'm currently accepting freelance contracts. You should <a href="mailto:j@jshakespeare.com">email me</a> if you need a product engineering specialist for your next project.</p>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="/about/">Services</a></li>
-        <li class="nav__item"><a href="/about/">Projects</a></li>
-        <li class="nav__item"><a href="/about/">About</a></li>
-      </ul>
-    </nav>
+    {{ partial "nav.html" }}
     <hr class="hero__hr">
   </div>
   <h2>About me</h2>
@@ -30,7 +21,7 @@
       {{ range $recentPosts }}
       <li class="post-list__item">
         <a href="{{.Permalink}}" class="post-list__link">{{.Title}}</a>
-        <time datetime="{{.Date}}" class="post-list__date">{{.Date.Format "2 January 2006"}}</time>
+              <small><time datetime="{{.Date}}" class="post-list__date">{{.Date.Format "2 January 2006"}}</time></small>
       </li>
     {{ end }}
     </ul>

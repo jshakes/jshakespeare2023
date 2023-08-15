@@ -1,0 +1,13 @@
+{{ define "main" }}
+	{{ partial "nav.html" }}
+	<h1>{{.Title}}</h1>
+	<div class="sidebar__container">
+		{{.Content}}
+		<aside class="sidebar__aside">
+			<figure>
+				<img src="/james-shakespeare.jpg" alt="James Shakespeare">
+				<figcaption>Credit: <a href="https://www.instagram.com/erallphotography/">Erica Rallo</a></figcaption>
+			</figure>
+		</aside>
+	</div>
+{{ end }}

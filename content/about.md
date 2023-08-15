@@ -1,6 +1,6 @@
 ---
 title: "About"
-layout: about.html
+layout: about
 ---
 
 I’ve been making websites and other digital products for over a decade. I specialize in front-end web technologies, which means I spend most of my time writing code with languages like JavaScript. I particularly enjoy working at the intersection of design and code; in my experience they are usually two sides of the same coin.
@@ -11,10 +11,8 @@ I've worked in a wide range of settings, including startups like [Taptap Send](h
 
 If you’d like to contact me to discuss your next project, my email address is [j@jshakespeare.com](mailto:j@jshakespeare.com). You can also find me on [GitHub](http://github.com/jshakes) and [LinkedIn](https://www.linkedin.com/in/james-shakespeare-40784435/).
 
-{{< figure src="/james-shakespeare.jpg" alt="James Shakespeare" caption="Credit: [Erica Rallo](https://www.instagram.com/erallphotography/)" >}}
-
 ## Colophon
 
 This website was built using [Hugo](https://gohugo.io/), a static site generator built with Go. The theme code is open source and can be found on [GitHub](https://github.com/jshakes/jshakespeare2019). It is hosted on [Netlify](https://www.netlify.com/).
 
-The body font is [PT Sans](https://company.paratype.com/pt-sans-pt-serif) and the display font is [Interstate](http://tfj.fontbureau.com/#Interstate).
+The font is Overpass.
