@@ -23,7 +23,7 @@ We need to do a couple of things before we can test the error boundary itself:
 * Temporarily suppress `console.log` errors so that our test runner process doesn’t get its output spammed with error messages or worse, aborted
 * Define a React component that will throw an error when rendered
 
-```typescript
+```jsx
 import React from 'react';
 import MyErrorBoundary from './MyErrorBoundary';
 import { render, screen } from '@testing-library/react';
@@ -53,7 +53,7 @@ At its core an error boundary component only has two jobs: display its children 
 
 In RTL we can test this behavior with the following assertions:
 
-```typescript
+```jsx
 it('renders children when everything is fine', async () => {
   render(
     <MyErrorBoundary>
@@ -80,7 +80,7 @@ If your error boundary has other functionality you want to test, for example dis
 
 ## Full working example
 
-```typescript
+```jsx
 import React from 'react';
 import MyErrorBoundary from './MyErrorBoundary';
 import { render, screen } from '@testing-library/react';

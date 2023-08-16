@@ -1,14 +1,28 @@
 @use './base/defaults';
+@use './base/fonts';
 @use './base/normalize';
 @use './base/pygments';
+@use './blocks/post';
 @use './common/media';
 
 html {
 	font-size: 18px;
 }
 
+$font-body: 'Overpass', sans-serif;
+$font-display: 'Overpass', sans-serif;
+$font-code: 'Ubuntu Mono', monospace;
+
 body {
-	font-family: 'Overpass', sans-serif;
+	font-family: $font-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-display;
+}
+
+pre, code {
+	font-family: $font-code;
 }
 
 .page {
@@ -25,6 +39,8 @@ body {
 	text-decoration: none;
 	color: inherit;
 	display: block;
+	font-family: $font-display;
+	font-weight: bold;
 
 	&:hover {
 		color: var(--accent-1);
@@ -33,6 +49,10 @@ body {
 
 .hero {
 	margin: 0 0 4em;
+}
+
+.hero__intro {
+	font-family: $font-display;
 }
 
 .hero__hr {
