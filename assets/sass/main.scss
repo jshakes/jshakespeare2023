@@ -2,6 +2,7 @@
 @use './base/fonts';
 @use './base/normalize';
 @use './base/pygments';
+@use './blocks/hero';
 @use './blocks/post';
 @use './blocks/skip-link';
 @use './common/media';
@@ -20,10 +21,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
 }
 
-h1 {
-	@include typography.h1;	
-}
-
 pre, code {
 	font-family: typography.$font-code;
 }
@@ -32,6 +29,12 @@ pre, code {
 	max-width: 42em;
 	margin: 0 auto;
 	padding: 0 1em;
+}
+
+.page__heading {
+	@include typography.h1;
+
+	margin-bottom: 1em;
 }
 
 .masthead {
@@ -51,54 +54,6 @@ pre, code {
 	}
 }
 
-.hero {
-	margin: 0 0 4em;
-}
-
-.hero__hr {
-	font-size: 0.6em;
-	position: relative;
-	clip-path: polygon(0 0,100% 0 , calc(100% - 0.6em) 100%, -0.6em 100%);
-	-webkit-clip-path: polygon(0 0,100% 0 , calc(100% - 0.6em) 100%, -0.6em 100%);
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	z-index: -1;
-	height: 1em;
-
-	&:before {
-		content: '';
-		position: fixed;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		z-index: -1;
-		border-radius: inherit;
-		background: linear-gradient(to bottom right, var(--accent-1) 20%, var(--accent-2) 80%);
-		animation: gradient 15s ease-in infinite;
-		background-size: 300%;
-	}
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-.hero__intro {
-	@include typography.h1;
-	
-	margin: 1.25em 0;
-}
 
 .nav__items {
 	list-style: none;
@@ -112,43 +67,6 @@ pre, code {
 	
 	@include media.tablet-portrait-up {
 		margin-right: 2em;
-	}
-}
-
-.hero__availability {
-	position: relative;
-}
-
-.hero__availability-indicator {
-	height: .666666em;
-	width:  .666666em;
-	display: inline-block;
-	border-radius: 100%;
-	background-color: #36e236;
-	margin-right: 0.25em;
-	animation: pulse 3s infinite;
-	
-	@include media.tablet-portrait-up {
-		left: -1.333333em;
-		top: 0.4em;
-		position: absolute;
-	}
-}
-
-@keyframes pulse {
-	0% {
-		outline: 0.1em solid rgba(#36e236, 0.5);
-		transform: scale(1);
-	}
-	16% {
-		transform: scale(1.1);
-	}
-	33% {
-		outline: 0.5em solid rgba(#36e236, 0);
-		transform: scale(1);
-	}
-	100% {
-		outline: 0.5em solid rgba(#36e236, 0);
 	}
 }
 
