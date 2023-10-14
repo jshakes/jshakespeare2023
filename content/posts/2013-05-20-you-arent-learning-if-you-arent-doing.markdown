@@ -6,7 +6,7 @@ layout: post
 permalink: you-arent-learning-if-you-arent-doing
 title: You aren't learning if you aren't doing
 wordpress_id: 1074
-featured_image: /post_images/you-arent-learning-if-you-arent-doing.jpg
+featured_image: post_images/you-arent-learning-if-you-arent-doing.jpg
 featured_image_caption: Illustration by Eleanor Shakespeare
 ---
 

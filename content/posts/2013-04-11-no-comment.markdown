@@ -6,7 +6,7 @@ layout: post
 permalink: no-comment
 title: No comment.
 wordpress_id: 1052
-featured_image: /post_images/no-comment.jpg
+featured_image: post_images/no-comment.jpg
 featured_image_caption: Illustration by Eleanor Shakespeare
 ---
 
