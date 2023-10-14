@@ -44,11 +44,7 @@
       {{ block "footer" . }}
         <footer class="footer">
           <div class="footer__contents">
-            <p>© <a href="/">James Shakespeare</a> {{ dateFormat "2006" now }}</p>
-            <ul class="nav__items">
-                <li class="nav__item"><a href="/posts/index.xml">RSS</a></li>
-            </ul>
-            <p><small>Made in London. No JS, no cookies, no trackers ✌️</small></p>
+            <p><small>© <a href="/">James Shakespeare</a> {{ dateFormat "2006" now }}. <a href="/posts/index.xml">RSS</a><br>Made in London. No JS, no cookies, no trackers ✌️</small></p>
           </div>
         </footer>
       {{ end }}
