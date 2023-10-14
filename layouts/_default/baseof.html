@@ -33,21 +33,24 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
-    <main class="page">
+    <a href="#main" class="skip-link">Skip to content</a>
+    <div class="page">
       <header class="masthead">
         <a class="masthead__site-name" href="{{.Site.BaseURL}}"><span role="presentation">▰▰</span> jshakespeare.com</a>
       </header>
-      {{ block "main" . }}{{ end }}
-    </main>
-    {{ block "footer" . }}
-      <footer class="footer page">
-        <div class="footer__contents">
-          <p>© <a href="/">James Shakespeare</a> {{ dateFormat "2006" now }}</p>
-          <ul class="nav__items">
-              <li class="nav__item"><a href="/posts/index.xml">RSS</a></li>
-          </ul>
-        </div>
-      </footer>
-    {{ end }}
+      <main id="main">
+        {{ block "main" . }}{{ end }}
+      </main>
+      {{ block "footer" . }}
+        <footer class="footer">
+          <div class="footer__contents">
+            <p>© <a href="/">James Shakespeare</a> {{ dateFormat "2006" now }}</p>
+            <ul class="nav__items">
+                <li class="nav__item"><a href="/posts/index.xml">RSS</a></li>
+            </ul>
+          </div>
+        </footer>
+      {{ end }}
+    </div>
   </body>
 </html>

@@ -1,0 +1,16 @@
+@use '../common/a11y';
+
+.skip-link {
+	@include a11y.visually-hidden;
+
+	position: fixed;
+	top: 1em;
+	left: 1em;
+	z-index: 1;
+
+	&:focus {
+		@include a11y.reset-visually-hidden;
+
+		position: fixed;
+	}
+}
