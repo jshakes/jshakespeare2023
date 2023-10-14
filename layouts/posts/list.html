@@ -1,19 +1,13 @@
 {{ define "main" }}
-  <div class="page">
-    {{ partial "nav.html" }}
-    <div class="page__content">
-      <main id="main">
-        <h1 class="page__heading">{{.Title}}</h1>
-        <ul class="post-list">
-          <!-- Ranges through content/posts/*.md -->
-          {{ range .Pages }}
-            <li class="post-list__item">
-              <a href="{{.Permalink}}" class="post-list__link">{{.Title}}</a>
-              <small><time datetime="{{.Date}}" class="post-list__date">{{.Date.Format "2 January 2006"}}</time></small>
-            </li>
-          {{ end }}
-        </ul>
-      </main>
-    </div>
-  </div>
+  <h1 class="page__heading">{{.Title}}</h1>
+  <ul class="post-list">
+    <!-- Ranges through content/posts/*.md -->
+    {{ range .Pages }}
+      <li class="post-list__item">
+        <a href="{{.Permalink}}" class="post-list__link">{{.Title}}</a>
+        <small><time datetime="{{.Date}}" class="post-list__date">{{.Date.Format "2 January 2006"}}</time></small>
+      </li>
+    {{ end }}
+  </ul>
+  <p><a href="/">← Home</a></p>
 {{ end }}
