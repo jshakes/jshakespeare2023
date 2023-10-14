@@ -17,13 +17,13 @@
 }
 
 .post__content pre {
-	padding: 2em;
-	margin: 2em -2em;
+	padding: 1em;
+	margin: 2em -1em;
 	overflow: auto;
 	white-space: pre;
 	
 	@include media.tablet-portrait-up {
-		padding: 2em;
-		margin: 2em -2em;
+		padding: 1.5em;
+		margin: 2em -1.5em;
 	}
 }
