@@ -15,4 +15,4 @@ If you’d like to contact me to discuss your next project, my email address is 
 
 This website was built using [Hugo](https://gohugo.io/), a static site generator built with Go. The theme code is open source and can be found on [GitHub](https://github.com/jshakes/jshakespeare2019). It is hosted on [Netlify](https://www.netlify.com/).
 
-The display font is Overpass and the body font is Inter.
+The display font is Overpass, the body font is Inter, and the code font is Ubuntu Mono.
