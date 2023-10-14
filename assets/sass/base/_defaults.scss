@@ -110,3 +110,21 @@ p,
 li {
   line-height: 1.5;
 }
+
+blockquote {
+  position: relative;
+  margin: 0;
+  padding-left: 2em;
+  margin: 1.25em 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: var(--foreground, black);
+    opacity: 0.25;
+    width: 0.25em;
+  }
+}

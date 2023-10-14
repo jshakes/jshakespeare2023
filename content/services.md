@@ -32,6 +32,7 @@ I have over 12 years of software development experience in the UK and US tech in
 As a contractor I work mostly with early-to-mid-stage startups, helping them get from loose product requirements to robust customer-facing technical solutions through rapid, iterative, and highly collaborative processes. I place a high value on planning, communication, and testing as a recipe for stress-free projects and high quality end-products.
 
 > “James is one of the top handful of individuals I've had the privilege of working with in my career.”
+>
 > — Charles Edwards-Kuhn, Chief Product Officer at Taptap Send
 
 To read more about me and my approach to building high quality software, ~click here~
