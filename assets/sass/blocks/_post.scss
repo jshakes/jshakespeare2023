@@ -1,13 +1,29 @@
+@use '../common/media';
+@use '../common/typography';
+
 .post__header {
 	margin: 0 0 4em;
 }
 
 .post__headline {
-	font-size: 2.5em;
-	margin: 0;
+	@include typography.h1;
+	
+	margin-bottom: 0 0 0.25em;
 }
 
 .post__dateline {
 	margin-bottom: 2em;
 	display: block;
+}
+
+.post__content pre {
+	padding: 2em;
+	margin: 2em -2em;
+	overflow: auto;
+	white-space: pre;
+	
+	@include media.tablet-portrait-up {
+		padding: 2em;
+		margin: 2em -2em;
+	}
 }

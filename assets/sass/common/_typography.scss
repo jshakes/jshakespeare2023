@@ -1,0 +1,10 @@
+$font-body: 'Inter', sans-serif;
+$font-display: 'Overpass', sans-serif;
+$font-code: 'B612 Mono', monospace;
+
+@mixin h1 {
+	font-size: 1.75em;
+	margin: 0;
+	line-height: 1.33333;
+	font-family: $font-display;	
+}

@@ -1,15 +1,13 @@
 {{ define "main" }}
   <div class="hero">
-    <p class="hero__intro">James Shakespeare is a software engineer from London</p>
-    <p>I make websites that are easy to use. I sporadically <a href="/posts/">write things</a>.</p>
-    <p><a href="https://codepen.io/jshakes/pen/gOQJxQK" class="hero__availability-indicator" aria-hidden="true" target="_blank"></a> I'm currently accepting freelance contracts. You should <a href="mailto:j@jshakespeare.com">email me</a> if you need a product engineering specialist for your next project.</p>
-    {{ partial "nav.html" }}
+    <p class="hero__intro">I’m James Shakespeare, a software engineer. I build complex products that are easy to use.</p>
+    <p class="hero__availability"><a href="https://codepen.io/jshakes/pen/gOQJxQK" class="hero__availability-indicator" aria-hidden="true" target="_blank"></a> I'm currently accepting freelance contracts. You should <a href="mailto:j@jshakespeare.com">email me</a> if you need a product engineering specialist for your next project. (<a href="/services/">Read more</a>)</p>
+    {{ partial "links.html" }}
     <hr class="hero__hr">
   </div>
   <h2>About me</h2>
-  <p>I have over twelve years of experience building software at startups, agencies, and as a freelancer. I specialize in browser-based technology and I mostly write code using languages like HTML, CSS, and JavaScript (yes, TypeScript too) and frameworks like React, but I know how to use the right tool for the job. This website loads no JavaScript whatsoever.</p>
-  <p>I'm often also involved in shaping the design and user experience of the things I build.</p>
-  <p><a href="/about/">Read more</a></p>
+  <p>I have over 15 years of software development experience in the UK and US tech industry. During that time I have worked with businesses of all shapes and sizes, from pre-seed startups to Fortune 500 companies. I have worked as an individual contributor and as a manager in high-performing engineering teams, as well as in 'army of one' cross-functional roles. I have been involved with every stage of the software development lifecycle and have written, tested, and shipped code that has been used by millions of people.</p>
+  <p>I mostly help clients with full-stack web development, and I specialize in browser-based technology. I mostly use languages like HTML, CSS, and JavaScript/TypeScript and frameworks like React, but I know how to keep things simple and pick the right tools for the job.</p>
   <section class="homepage-content__section">
     <h2 class="homepage-content__section-heading">Recent posts</h2>
     <!-- Ranges through content/posts/*.md -->
@@ -21,10 +19,10 @@
       {{ range $recentPosts }}
       <li class="post-list__item">
         <a href="{{.Permalink}}" class="post-list__link">{{.Title}}</a>
-              <small><time datetime="{{.Date}}" class="post-list__date">{{.Date.Format "2 January 2006"}}</time></small>
+        <small><time datetime="{{.Date}}" class="post-list__date">{{.Date.Format "2 January 2006"}}</time></small>
       </li>
     {{ end }}
     </ul>
-    <p><a class="cta" href="/posts/">Archive</a></p>
+    <p>(<a class="cta" href="/posts/">Archive</a>)</p>
   </section>
 {{ end }}

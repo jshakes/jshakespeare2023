@@ -4,25 +4,27 @@
 @use './base/pygments';
 @use './blocks/post';
 @use './common/media';
+@use './common/typography';
 
 html {
 	font-size: 18px;
 }
 
-$font-body: 'Overpass', sans-serif;
-$font-display: 'Overpass', sans-serif;
-$font-code: 'Ubuntu Mono', monospace;
-
 body {
-	font-family: $font-body;
+	font-family: typography.$font-body;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: $font-display;
+	font-family: typography.$font-display;
+	font-weight: 500;
+}
+
+h1 {
+	@include typography.h1;	
 }
 
 pre, code {
-	font-family: $font-code;
+	font-family: typography.$font-code;
 }
 
 .page {
@@ -39,8 +41,9 @@ pre, code {
 	text-decoration: none;
 	color: inherit;
 	display: block;
-	font-family: $font-display;
+	font-family: typography.$font-display;
 	font-weight: bold;
+	font-size: 1.25em;
 
 	&:hover {
 		color: var(--accent-1);
@@ -49,10 +52,6 @@ pre, code {
 
 .hero {
 	margin: 0 0 4em;
-}
-
-.hero__intro {
-	font-family: $font-display;
 }
 
 .hero__hr {
@@ -95,15 +94,9 @@ pre, code {
 }
 
 .hero__intro {
-	font-size: 1.75em;
-	font-weight: 600;
+	@include typography.h1;
+	
 	margin: 1.25em 0;
-	line-height: 1;
-	letter-spacing: -0.0075em;
-
-	@include media.tablet-portrait-up {
-		font-size: 2.5em;
-	}
 }
 
 .nav__items {
@@ -114,7 +107,15 @@ pre, code {
 
 .nav__item {
 	display: inline-block;
-	margin-right: 2em;
+	margin-right: 1.5em;
+	
+	@include media.tablet-portrait-up {
+		margin-right: 2em;
+	}
+}
+
+.hero__availability {
+	position: relative;
 }
 
 .hero__availability-indicator {
@@ -124,7 +125,13 @@ pre, code {
 	border-radius: 100%;
 	background-color: #36e236;
 	margin-right: 0.25em;
-	animation: pulse 2s infinite;
+	animation: pulse 3s infinite;
+	
+	@include media.tablet-portrait-up {
+		left: -1.333333em;
+		top: 0.4em;
+		position: absolute;
+	}
 }
 
 @keyframes pulse {
@@ -156,22 +163,12 @@ pre, code {
 
 .post-list__link {
 	display: block;
-
-	&:visited {
-		color: darkblue;
-	}
 }
 
 .sidebar__container {
 	position: relative;
 }
 
-.sidebar__aside {
-	@include media.tablet-portrait-up {
-		position: absolute;
-		right: 100%;
-		top: 0;
-		width: 15em;
-		margin-right: 2em;
-	}
+.footer {
+	margin-top: 4em;
 }
