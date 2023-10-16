@@ -1,5 +1,5 @@
 ---
-date: 2023-08-15 12:20:52+00:00
+date: 2023-10-16 12:20:52+00:00
 title: How to test an error boundary component with React Testing Library
 description:
 featured_image:
@@ -14,7 +14,7 @@ In a React application, an error boundary catches JavaScript errors thrown durin
 
 If your application already includes an error boundary component: congratulations on accepting your innate human fallibility! Now let’s finish the job and make sure it actually works by writing a unit test.
 
-In this post I won’t include the code for the error boundary component itself. The [React docs include a decent working example](https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary) and there are plenty of third party package such as [react-error-boundary](https://github.com/bvaughn/react-error-boundary) or [@sentry/react](https://www.npmjs.com/package/@sentry/react)’s `ErrorBoundary` component. Good unit tests are agnostic to implementation details. All I’m assuming below is that your error boundary component can be passed children via `props.children` and that when an error is caught, it will display some fallback copy instead of those children. I’m British so have chosen the word ‘sorry’. (Other apologies are available but please don’t use [annoying cutesy language](https://alexwlchan.net/2022/no-cute/).)
+In this post I won’t include the code for the error boundary component itself. The [React docs include a decent working example](https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary) and there are plenty of third party packages like [react-error-boundary](https://github.com/bvaughn/react-error-boundary) or [@sentry/react](https://www.npmjs.com/package/@sentry/react)’s `ErrorBoundary` component. Good unit tests are agnostic to implementation details. All I’m assuming below is that your error boundary component can be passed children via `props.children` and that when an error is caught, it will display some fallback copy instead of those children. I’m British so have chosen the word ‘sorry’. (Other apologies are available but please don’t use [annoying cutesy language](https://alexwlchan.net/2022/no-cute/).)
 
 ## Setup
 

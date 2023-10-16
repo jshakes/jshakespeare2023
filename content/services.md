@@ -6,19 +6,19 @@ I am available to hire as a software engineer and/or consultant. For rates and a
 
 ## Software engineering
 
-You can hire me as a software engineer on a day rate or project rate. Most clients hire me to work in small product or engineering-focused teams, but I also excel as a full-service engineer and when deployed in cross-functional teams.
+You can hire me as a software engineer on a day rate or project rate. Most clients hire me to work in their product or engineering team, but I also excel as a full-service engineer and when deployed in cross-functional teams.
 
 I specialize in front-end web development that incorporates UX best-practices. I have formal design training and I excel at building easy-to-use and visually delightful software without the need for costly design/engineering waterfall processes.
 
 I mostly work from my home in London but can travel as needed.
 
-### Specialties 🧑‍🍳
+### Specialities 🧑‍🍳
 
-* Single-page application development with React (>8 years experience) and TypeScript (>5 years)
+* Single-page application (SPA) development with React (>8 years experience) and TypeScript (>5 years)
 * Full-stack JavaScript development with Node, NextJS
 * React Native development
+* Design systems and component libraries
 * Web accessibility
-* Design system and component library development
 
 ## Consulting
 
