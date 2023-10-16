@@ -5,5 +5,8 @@ pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsUseClasses = true
 
+[params]
+Description = "Software engineer and consultant with >15 years experience. Specializing in product engineering, design systems, and full-stack web development with React and TypeScript."
+
 [permalinks]
 posts = "/:slug"
