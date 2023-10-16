@@ -13,6 +13,6 @@ If you’d like to contact me to discuss your next project, my email address is 
 
 ## Colophon
 
-This website was built using [Hugo](https://gohugo.io/), a static site generator built with Go. The theme code is open source and can be found on [GitHub](https://github.com/jshakes/jshakespeare2019). It is hosted on [Netlify](https://www.netlify.com/).
+This website was built using [Hugo](https://gohugo.io/), a static site generator built with Go. The theme code is open source and can be found on [GitHub](https://github.com/jshakes/jshakespeare2023).
 
 The display font is Overpass, the body font is Inter, and the code font is Ubuntu Mono.
