@@ -10,7 +10,9 @@ You can hire me as a software engineer on a day rate or project rate. Most clien
 
 I specialize in front-end web development that incorporates UX best-practices. I have formal design training and I excel at building easy-to-use and visually delightful software without the need for costly design/engineering waterfall processes.
 
-I mostly work from my home in London but can travel as needed.
+I mostly work remotely from my home in London but can travel as needed.
+
+References and work examples available upon request.
 
 ### Specialities 🧑‍🍳
 
@@ -22,11 +24,11 @@ I mostly work from my home in London but can travel as needed.
 
 ## Consulting
 
-You can also hire me as a consultant on your next project. Some things I specialize in are SDLC, web technology and infrastructure, design systems, web accessibility, and hiring and interview practices. I am can also provide code review and codebase health checks/audits.
+You can also hire me as a consultant on your next project. Some things I specialize in are product strategy, web technology and infrastructure, design systems, web accessibility, and how to hire and manage an engineering team. I can also provide code review and codebase health checks/audits.
 
 ## Why should you hire me?
 
- have over 12 years of software development experience in the UK and US tech industries. During that time I have worked with businesses of all shapes and sizes, from pre-seed startups to Fortune 500 companies. I have worked as an individual contributor and as a manager in high-performing engineering teams, as well as in 'army of one' cross-functional roles. I have been involved with every stage of the development lifecycle and have written, tested, and shipped code that has been used by millions of people.
+I have over 15 years of professional software development experience in the UK and US. During that time I have worked with businesses of all shapes and sizes, from pre-seed startups to Fortune 500 companies. I have worked as an individual contributor and as a manager in high-performing engineering teams, as well as in 'army of one' cross-functional roles. I have been involved with every stage of the software development lifecycle and have written, tested, and shipped code that has been used by millions of people.
 
 As a contractor I work mostly with early-to-mid-stage startups, helping them get from loose product requirements to robust customer-facing technical solutions through rapid, iterative, and highly collaborative processes. I place a high value on planning, communication, and testing as a recipe for stress-free projects and high quality end-products.
 
