@@ -8,23 +8,23 @@ I am available to hire as a software engineer and/or consultant. For rates and a
 
 You can hire me as a software engineer on a day rate or project rate. Most clients hire me to work in their product or engineering team, but I also excel as a full-service engineer and when deployed in cross-functional teams.
 
-I specialize in front-end web development that incorporates UX best-practices. I have formal design training and I excel at building easy-to-use and visually delightful software without the need for costly design/engineering waterfall processes.
+I specialize in front-end web development that incorporates UX best-practices. I have formal design training and I am able to build easy-to-use and visually delightful software without the need for costly design/engineering waterfall processes.
 
 I mostly work remotely from my home in London but can travel as needed.
 
 References and work examples available upon request.
 
-### Specialities 🧑‍🍳
+### Expertise
 
 * Single-page application (SPA) development with React (>8 years experience) and TypeScript (>5 years)
-* Full-stack JavaScript development with Node, NextJS
-* React Native development
+* Full-stack Type/JavaScript development with Node, NextJS, Vercel, etc.
+* React Native development and App/Play Store deployment
 * Design systems and component libraries
-* Web accessibility
+* Web accessibility (a11y)
 
-## Consulting
+## Software consulting
 
-You can also hire me as a consultant on your next project. Some things I specialize in are product strategy, web technology and infrastructure, design systems, web accessibility, and how to hire and manage an engineering team. I can also provide code review and codebase health checks/audits.
+You can also hire me to consult on your next project. Some things I know a lot about are product strategy, web technology and infrastructure, design systems, web accessibility, and how to hire and manage engineers. I can also provide code review and codebase health checks/audits.
 
 ## Why should you hire me?
 
