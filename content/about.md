@@ -3,16 +3,20 @@ title: "About"
 layout: about
 ---
 
-I’ve been making websites and other digital products for over a decade. I specialize in front-end web technologies, which means I spend most of my time writing code with languages like JavaScript. I particularly enjoy working at the intersection of design and code; in my experience they are usually two sides of the same coin.
+I’ve been writing code in some form or another for over 20 years. I cut my teeth in the early-00’s learning ActionScript to power whatever silly Flash game I was making (RIP Macromedia) and HTML to customise my MySpace profile (RIP `<marquee>`; Tom). 
 
-I’m a strong proponent of [human-centered design](https://www.youtube.com/watch?v=rmM0kRf8Dbk&vl=en). When we set out to make a product, we are embracing an opportunity to make the user’s life better. That is an exciting job to have!
+A lot has changed since those halcyon days spent straining my G4 processor to run pirated Macromedia software in my teenage bedroom. Nowadays I spend most of my time in my home office, straining an M2 to do whatever it is Docker does, and writing TypeScript and HTML to power whatever SPA I’m currently working on.
 
-I've worked in a wide range of settings, including startups like [Taptap Send](https://techcrunch.com/2021/12/20/taptap-send-raises-65m-to-build-cross-border-remittances-focused-on-the-most-underserved-markets/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAF18x7dqKE1LTskI4iiCxulTYo2AIp0APMmPJy_f4PdNVdEh2ZcEdOQMd5D6ec1XErTezzVRRl9E603RLPWTSCSqH0D1BQnXsiRRI15PJymsvuGXWPs88nBQtRo6xYRBfVwt-8SsZhqH2pJjj_12niXJAVbceXlcgrreQ8bU6ldY) and [Quartz](https://qz.com), and design agencies where I built things for companies like Time magazine, British Airways, BMW and Volkswagen. 
+Maybe things haven’t changed much after all…
 
-If you’d like to contact me to discuss your next project, my email address is [j@jshakespeare.com](mailto:j@jshakespeare.com). You can also find me on [GitHub](http://github.com/jshakes) and [LinkedIn](https://www.linkedin.com/in/james-shakespeare-40784435/).
+## AFK
+
+In the real world I enjoy cycling, very long walks, and generally being outdoors. I like being on or in water in pretty much any form. I like cooking and eating things that I or other people have cooked. I’m a sucker for TV quiz shows and I will die happy if I ever appear on Only Connect.
 
 ## Colophon
 
 This website was built using [Hugo](https://gohugo.io/), a static site generator built with Go. The theme code is open source and can be found on [GitHub](https://github.com/jshakes/jshakespeare2023).
 
-The display font is Overpass, the body font is Inter, and the code font is Ubuntu Mono.
+The display font is Overpass, the body font is Inter, and the code font is Ubuntu Mono. All fonts are self-hosted, with thanks to [google-webfonts-helper](https://gwfh.mranftl.com/fonts).
+
+![James Shakespeare](/james-shakespeare.jpg)
