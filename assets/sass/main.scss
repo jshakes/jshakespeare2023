@@ -3,6 +3,7 @@
 @use './base/normalize';
 @use './base/pygments';
 @use './blocks/hero';
+@use './blocks/homepage-content';
 @use './blocks/post';
 @use './blocks/skip-link';
 @use './common/media';
@@ -63,11 +64,31 @@ pre, code {
 
 .nav__item {
 	display: inline-block;
-	margin-right: 1.5em;
+	margin-right: 0.5em;
 	
 	@include media.tablet-portrait-up {
-		margin-right: 2em;
+		margin-right: 0.75em;
 	}
+
+	&::after {
+		content: '·';
+		margin-left: 0.5em;
+
+		@include media.tablet-portrait-up {
+			margin-left: 0.75em;
+		}
+	}
+
+	&:last-child::after {
+		content: none;
+	}
+
+	 a[target="_blank"]::after {
+	   content: '↗';
+	   padding-left: 0.25em;
+	   display: inline-block;
+	   font-size: 92.5%;
+	 }
 }
 
 .post-list {

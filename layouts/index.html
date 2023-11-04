@@ -5,9 +5,8 @@
     {{ partial "links.html" }}
     <hr class="hero__hr">
   </div>
-  <h2>About me</h2>
+  <h2 class="homepage-content__section-heading">About me</h2>
   <p>I have over 15 years of software development experience in the UK and US tech industry. During that time I have worked with businesses of all shapes and sizes, from pre-seed startups to Fortune 500 companies. I have worked as an individual contributor and as a manager in high-performing engineering teams, as well as in 'army of one' cross-functional roles. I have been involved with every stage of the software development lifecycle and have written, tested, and shipped code that has been used by millions of people.</p>
-  <p>I usually help clients with full-stack web development, and I specialize in browser-based technology. I’m fluent in languages like HTML, CSS, and JavaScript/TypeScript and I have lots of experience with frontend frameworks like React. Most importantly, I know how to pick the right tools for the job and keep things as simple as possible.</p>
   <p><a href="/services/">Read more about the services I offer</a>.</p>
   <section class="homepage-content__section">
     <h2 class="homepage-content__section-heading">Recent posts</h2>
@@ -23,6 +22,15 @@
       </li>
     {{ end }}
     </ul>
-    <p>(<a class="cta" href="/posts/">Archive</a>)</p>
+    <div class="nav">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a class="cta" href="/posts/">Archive</a>
+        </li>
+        <li class="nav__item">
+          <a class="cta" href="/posts/index.xml">RSS</a>
+        </li>
+      </ul>
+    </div>
   </section>
 {{ end }}
