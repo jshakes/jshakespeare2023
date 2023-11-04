@@ -1,5 +1,5 @@
 ---
-date: 2023-11-04 12:20:52+00:00
+date: 2023-11-04 09:20:52+00:00
 title: Making route changes accessible in React with an autofocusing h1
 description:
 featured_image:
@@ -35,7 +35,7 @@ import React, { useEffect, useRef } from 'react';
 /**
  * A wrapper for h1 that focuses on mount. Useful as a page heading to
  * reset focus after a route change. See
- * https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_accessibility
+ * https://jshakespeare.com/accessible-route-change-react-router-autofocus-heading/
  */
 export default function FocusablePageHeading(props: {
   children: React.ReactNode;

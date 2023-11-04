@@ -12,12 +12,11 @@
   <section class="homepage-content__section">
     <h2 class="homepage-content__section-heading">Recent posts</h2>
     <!-- Ranges through content/posts/*.md -->
-    {{ $currentYear := now.Year }}
-    {{ $lastYear := add $currentYear -2 }}
+    {{ $cutoffDate := time "2020-02-10" }}
     {{ $posts := where .Site.RegularPages "Type" "post" }}
-    {{ $recentPosts := where .Site.RegularPages "Date.Year" "ge" $lastYear }}
+    {{ $recentPosts := where .Site.RegularPages "Date" "ge" $cutoffDate }}
     <ul class="post-list">
-      {{ range $recentPosts }}
+      {{ range first 10 ($recentPosts) }}
       <li class="post-list__item">
         <a href="{{.Permalink}}" class="post-list__link">{{.Title}}</a>
         <small><time datetime="{{.Date}}" class="post-list__date">{{.Date.Format "2 January 2006"}}</time></small>
