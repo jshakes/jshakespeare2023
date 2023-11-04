@@ -50,8 +50,9 @@ export default function FocusablePageHeading(props: {
   );
 }
 ```
+Then replace your existing usages of `h1` with the component, e.g. `<FocusablePageHeading>My great page</FocusablePageHeading>`.
 
-And that’s it! Note that we don’t need to do anything fancy to make the h1 unfocusable after it is blurred. That’s because although we are give the element a `tabindex` attribute to make it focusable programmatically, because its value is `-1`  the user will be unable to re-focus it with the Tab key once it is blurred.
+And that’s it! Note that we don’t need to do anything fancy to make the `h1` unfocusable after it is blurred. That’s because although we are give the element a `tabindex` attribute to make it focusable programmatically, because its value is `-1`  the user will be unable to re-focus it with the Tab key once it is blurred.
 
 ## Further reading
 
