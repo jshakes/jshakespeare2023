@@ -25,7 +25,7 @@ This is better because it creates a clearer expectation of what will happen when
 * Doesn’t use a native email client, for example Gmail users who use mail.google.com. (Some browsers will open mailto links using a web address, but this often requires some non-trivial tweaking [deep in the application settings](https://blog.hubspot.com/marketing/set-gmail-as-browser-default-email-client-ht).)
 * Uses a third-party native email client but is unable to make that their default email client, for example an iPhone user who [uses anything other than Apple’s Mail app](https://www.lifewire.com/choose-default-apps-on-iphone-4044162).
  
-{{< figure src="post_images/ios-mail.jpg" alt="Screenshot of the Apple iOS Mail app setup screen" caption="As a self-hating iPhone user who uses the Microsoft Outlook app for email, this is what I see when I tap a mailto link in my web browser. It’s not very useful." >}}
+{{< figure src="/post_images/ios-mail.jpg" alt="Screenshot of the Apple iOS Mail app setup screen" caption="As a self-hating iPhone user who uses the Microsoft Outlook app for email, this is what I see when I tap a mailto link in my web browser. It’s not very useful." >}}
 
 What’s more, labeling an email address with ‘email’ is redundant. Everyone knows that `yourname@yoursite.com` is an email address, so why not use that as the label?
 

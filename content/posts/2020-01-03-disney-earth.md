@@ -18,7 +18,7 @@ Despite this heft, many of these vessels are remarkably maneuverable. Most large
 
 For most of our Icelandic visit we stayed in Akureyri, the country’s second ‘city’, a relative term in Iceland - with a population of just 20,000 people it would be classified as a medium-sized town in the US. Akureyri is built on a hillside at the inland-most point of a fjord called the Eyjafjörður, and most mornings during the summer months a cruise ship sails the 60km from the mouth of the fjord in the north down to the port in Akureyri, where it sits and waits for its passengers, anywhere from a few hundred to several thousand, to look around the town before sailing back out to sea that evening. Armed with a pair of binoculars and the MarineTraffic app on my phone, I would identify each day’s visiting ship and compare it to the last, boring my girlfriend with statistics and itineraries while we ate our morning skyr and berries.
 
-{{< figure src="post_images/akureyri-map.jpg" alt="Map showing the location of Akureyri and the Eyjafjörður fjord" >}}
+{{< figure src="/post_images/akureyri-map.jpg" alt="Map showing the location of Akureyri and the Eyjafjörður fjord" >}}
 
 One morning I looked out of our vacation apartment window to see the _Disney Magic_ in port, owned and operated by Disney Cruise Lines (DCL). _Magic_ is relatively small for a modern cruise ship at 86,000 tons (the following day’s visitor would be the _MSC Preziosa_ at 139,000 tons), but it had an outsized presence in the port thanks to the exhaustive efforts of the Disney marketing department in the ship’s livery, which included red and blue Mickey-mouse themed paintwork and giant Disney logo emblazoned on each funnel.
 
@@ -28,7 +28,7 @@ The ship’s passengers were not exempt from carrying the Disney brand, their ma
 
 In the evening the _Magic_ blasted its horn, a seven-tone ditty to the tune of _When you wish upon a star_, which echoed around the hills surrounding the Eyjafjörður. Gradually the Disney cruisers headed back to eat their dinner aboard the ship as it prepared to return to sea.
 
-{{< figure src="post_images/eyjafjordur.jpg" caption="The Eyjafjörður fjord with Disney Magic docked in Akureyri port" >}}
+{{< figure src="/post_images/eyjafjordur.jpg" caption="The Eyjafjörður fjord with Disney Magic docked in Akureyri port" >}}
 
 Cruising has always struck me as an odd choice of vacation, a bit like staying in a hotel for a week and only venturing outside for a few hours every other day. It’s a vacation that bears closer resemblance to a theme park than the vacation we were on. On a DCL cruise, Akureyri and other port stops are not so much destinations as backdrops to the Disney experience, artificial locations like Disneyland itself. See gothic German castles like the one in _Tangled_, or snow-swept Scandinavian vistas like the ones in _Frozen_, while  Elsa and Anna sing to your kids. Why invite the world to Disneyland when you can take Disneyland to the world?
 
