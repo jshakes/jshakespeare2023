@@ -7,7 +7,10 @@
 }
 
 .nav__item {
+  margin-bottom: 0.25em;
+
   @include media.tablet-portrait-up {
+    margin-bottom: 0;
     margin-right: 0.75em;
     display: inline-block;
   }
@@ -16,6 +19,7 @@
     @include media.tablet-portrait-up {
       margin-left: 0.75em;
       content: '·';
+      opacity: 0.666666;
     }
   }
 

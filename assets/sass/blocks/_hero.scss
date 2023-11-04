@@ -56,34 +56,42 @@
 }
 
 .hero__availability-indicator {
-	height: .666666em;
-	width:  .666666em;
 	display: inline-block;
-	border-radius: 100%;
 	background-color: #36e236;
 	margin-right: 0.25em;
-	animation: pulse 3s infinite;
+	position: relative;
 	
 	@include media.tablet-portrait-up {
 		left: -1.333333em;
 		top: 0.4em;
 		position: absolute;
 	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		animation: pulse 3s infinite;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&,
+	&::after {
+		border-radius: 100%;
+		height: .666666em;
+		width:  .666666em;
+	}
 }
 
 @keyframes pulse {
 	0% {
-		outline: 0.1em solid rgba(#36e236, 0.5);
-		transform: scale(1);
-	}
-	16% {
-		transform: scale(1.1);
+		border: 0.1em solid rgba(#36e236, 0.5);
 	}
 	33% {
-		outline: 0.5em solid rgba(#36e236, 0);
-		transform: scale(1);
+		border: 0.5em solid rgba(#36e236, 0);
 	}
 	100% {
-		outline: 0.5em solid rgba(#36e236, 0);
+		border: 0.5em solid rgba(#36e236, 0);
 	}
 }
