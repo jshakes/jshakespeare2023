@@ -1,0 +1,32 @@
+@use '../common/media';
+
+.nav__items {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 4em;
+}
+
+.nav__item {
+  @include media.tablet-portrait-up {
+    margin-right: 0.75em;
+    display: inline-block;
+  }
+
+  &::after {
+    @include media.tablet-portrait-up {
+      margin-left: 0.75em;
+      content: '·';
+    }
+  }
+
+  &:last-child::after {
+    content: none;
+  }
+
+  a[target="_blank"]::after {
+    content: '\2197'; // the &#xFE0E; bit stops iOS converting ↗ to an emoji
+    padding-left: 0.25em;
+    display: inline-block;
+    font-size: 92.5%;
+  }
+}
