@@ -28,8 +28,8 @@
   }
 
   a[target="_blank"]::after {
-    font-family: monospace; // this stops iOS converting ↗ to an emoji
-    content: '↗';
+    // the \FE0E bit stops iOS converting ↗ to an emoji
+    content: '\2197\FE0E';
     padding-left: 0.25em;
     display: inline-block;
     font-size: 92.5%;
