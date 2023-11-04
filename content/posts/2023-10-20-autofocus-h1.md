@@ -21,7 +21,7 @@ However, if you’re stuck with some other routing package then you will have to
 When we move focus to the h1 we do two things to help users:
 
 1. We move focus to the top of the new page's content, ideally after any navigation or page chrome that may be redundant. We ensure that focus is not left lingering on some possibly irrelevant or likely non-existent DOM element from the previous page.
-2. We prompt screen readers to announce the new page's title
+2. We prompt screen readers to announce the new page's title.
 
 By default, `h1` is not a focusable element, but we can make any HTML element focusable using the `tabindex` attribute (in React, we must write this as `tabIndex`). 
 
@@ -52,7 +52,7 @@ export default function FocusablePageHeading(props: {
 ```
 Then replace your existing usages of `h1` with the component, e.g. `<FocusablePageHeading>My great page</FocusablePageHeading>`.
 
-And that’s it! Note that we don’t need to do anything fancy to make the `h1` unfocusable after it is blurred. That’s because although we are give the element a `tabindex` attribute to make it focusable programmatically, because its value is `-1`  the user will be unable to re-focus it with the Tab key once it is blurred.
+And that’s it! Note that we don’t need to do anything fancy to make the `h1` unfocusable after it is blurred. That’s because although we give the element a `tabindex` attribute to make it focusable programmatically, because its value is `-1`  the user will be unable to re-focus it with the Tab key once it is blurred.
 
 ## Further reading
 
