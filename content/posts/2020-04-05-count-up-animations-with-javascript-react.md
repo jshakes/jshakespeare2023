@@ -1,6 +1,6 @@
 ---
 date: 2020-04-05 21:00:00+05:00
-title: A simple count-up animation with JavaScript
+title: A simple count-up number animation with JavaScript
 slug: simple-count-up-number-animation-javascript-react
 description: Animating numbers using a count-up function, implemented in vanilla JavaScript and React
 ---
