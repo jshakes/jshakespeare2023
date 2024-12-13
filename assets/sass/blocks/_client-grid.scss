@@ -24,7 +24,7 @@
   @include media.tablet-portrait-up {
     margin: 4em 0;
     gap: 2rem 3rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   @include media.tablet-landscape-up {
