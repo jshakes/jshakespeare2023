@@ -1,4 +1,5 @@
 @use '../common/media';
+@use '../common/mixins';
 @use '../common/typography';
 
 .hero {
@@ -55,43 +56,11 @@
 	position: relative;
 }
 
-.hero__availability-indicator {
-	display: inline-block;
-	background-color: #36e236;
-	margin-right: 0.25em;
-	position: relative;
-	
-	@include media.tablet-portrait-up {
-		left: -1.333333em;
-		top: 0.4em;
-		position: absolute;
-	}
 
-	&::after {
-		content: '';
-		position: absolute;
-		animation: pulse 3s infinite;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-
-	&,
-	&::after {
-		border-radius: 100%;
-		height: .666666em;
-		width:  .666666em;
-	}
+.hero__availability-indicator--available {
+	@include mixins.availability-indicator(#36e236);
 }
 
-@keyframes pulse {
-	0% {
-		border: 0.1em solid rgba(#36e236, 0.5);
-	}
-	33% {
-		border: 0.5em solid rgba(#36e236, 0);
-	}
-	100% {
-		border: 0.5em solid rgba(#36e236, 0);
-	}
+.hero__availability-indicator--unavailable {
+	@include mixins.availability-indicator(#efd055);
 }

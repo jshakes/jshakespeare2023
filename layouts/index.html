@@ -1,36 +1,150 @@
 {{ define "main" }}
-  <div class="hero">
-    <p class="hero__intro">I’m <strong>James Shakespeare</strong>, a software engineer. I build intuitive products for the web and mobile.</p>
-    <p class="hero__availability"><i class="hero__availability-indicator" aria-hidden="true"></i> I'm available for new contracts starting September 2024. You should <a href="mailto:j@jshakespeare.com">email me</a> if you need a product engineering specialist to help launch your next project 🚀</p>
+<div class="hero">
+    <p class="hero__intro">I’m <strong>James Shakespeare</strong>, a software
+        engineer. I build intuitive products for the web and mobile.</p>
+    <p class="hero__availability"><i
+            class="hero__availability-indicator--unavailable" aria-hidden="true"></i>
+        I'm fully booked! My earliest availability for new projects is April 2025.
+        You should still <a href="mailto:j@jshakespeare.com">email me</a> if you have
+        a project in mind for the future or just want to say hi 👋</p>
     {{ partial "links.html" }}
     <hr class="hero__hr">
-  </div>
-  <h2 class="homepage-content__section-heading">About me</h2>
-  <p>I have over 15 years of software development experience in the UK and US tech industry. During that time I have worked with businesses of all shapes and sizes, from pre-seed startups to Fortune 500 companies. I have worked as an individual contributor and as a manager in high-performing engineering teams. I have been involved with every stage of the software development lifecycle and have written, tested, and shipped code that has been used by millions of people.</p>
-  <p><a href="/services/">Read more about the services I offer</a>.</p>
-  <section class="homepage-content__section">
+</div>
+<section class="homepage-content__section">
+    <h2 class="homepage-content__section-heading">A wealth of experience on both
+        sides of the pond</h2>
+    <p>I have over 15 years of software development experience in the UK and US tech
+        industry. During that time I have worked with businesses of all shapes and
+        sizes, from pre-seed startups to Fortune 500 companies. I have worked as an
+        individual contributor and as a manager in high-performing engineering teams.
+        I have been involved with every stage of the software development lifecycle
+        and have written, tested, and shipped code that has been used by millions of
+        people.</p>
+    <p><a href="/services/">Read more about the services I offer</a>.</p>
+</section>
+<section class="homepage-content__section">
+    <h2>Trusted by the world's top tech companies</h2>
+    <p>I work directly with product and engineering teams to deliver quality and
+        value, again and again.</p>
+    <ul class="client-grid">
+        <li class="client-grid__item">
+            <a href="https://automattic.com/" target="_blank">
+                <picture>
+                    <source srcset="logos/automattic-dark.png"
+                            media="(prefers-color-scheme: light)"/>
+                    <source srcset="logos/automattic-light.png"
+                            media="(prefers-color-scheme: dark)"/>
+                    <img src="logos/automattic-dark.png" alt="Automattic"/>
+                </picture>
+            </a>
+        </li>
+        <li class="client-grid__item">
+            <a href="https://www.semianalysis.com/" target="_blank">
+                <img src="logos/semianalysis.png" alt="SemiAnalysis logo" width="179"
+                     height="74">
+            </a>
+        </li>
+        <li class="client-grid__item">
+            <a href="https://comet.com/" target="_blank">
+                <picture>
+                    <source srcset="logos/comet-dark.png"
+                            media="(prefers-color-scheme: light)"/>
+                    <source srcset="logos/comet-light.png"
+                            media="(prefers-color-scheme: dark)"/>
+                    <img src="logos/comet-dark.png" alt="Comet logo"
+                         width="180" height="69">
+                </picture>
+            </a>
+        </li>
+        <li class="client-grid__item">
+            <a href="https://www.taptapsend.com/" target="_blank">
+                <picture>
+                    <source srcset="logos/taptap-send-dark.png"
+                            media="(prefers-color-scheme: light)"/>
+                    <source srcset="logos/taptap-send-light.png"
+                            media="(prefers-color-scheme: dark)"/>
+                    <img src="logos/taptap-send-dark.png" alt="Taptap Send logo"
+                         width="140" height="67">
+                </picture>
+            </a>
+        </li>
+        <li class="client-grid__item">
+            <a href="https://www.theinfatuation.com/" target="_blank">
+                <picture>
+                    <source srcset="logos/infatuation-dark.png"
+                            media="(prefers-color-scheme: light)"/>
+                    <source srcset="logos/infatuation-light.png"
+                            media="(prefers-color-scheme: dark)"/>
+                    <img src="logos/infatuation-dark.png" alt="Infatuation logo"
+                         width="197" height="23">
+                </picture>
+            </a>
+        </li>
+        <li class="client-grid__item">
+            <a href="https://capimoney.com/" target="_blank">
+                <picture>
+                    <source srcset="logos/capi-dark.png"
+                            media="(prefers-color-scheme: light)"/>
+                    <source srcset="logos/capi-light.png"
+                            media="(prefers-color-scheme: dark)"/>
+                    <img src="logos/capi-dark.png" alt="Capi Money logo" width="148"
+                         height="53">
+                </picture>
+            </a>
+        </li>
+        <li class="client-grid__item">
+            <a href="https://www.money254.co.ke/" target="_blank">
+                <picture>
+                    <source srcset="logos/money254-dark.png"
+                            media="(prefers-color-scheme: light)"/>
+                    <source srcset="logos/money254-light.png"
+                            media="(prefers-color-scheme: dark)"/>
+                    <img src="logos/money254-dark.png" alt="Money254 logo"
+                         width="205"
+                         height="32">
+                </picture>
+            </a>
+        </li>
+        <li class="client-grid__item">
+            <a href="https://qz.com/" target="_blank">
+                <picture>
+                    <source srcset="logos/quartz-dark.png"
+                            media="(prefers-color-scheme: light)"/>
+                    <source srcset="logos/quartz-light.png"
+                            media="(prefers-color-scheme: dark)"/>
+                    <img src="logos/quartz-dark.png" alt="Quartz logo" width="168"
+                         height="26">
+                </picture>
+            </a>
+        </li>
+    </ul>
+</section>
+<section class="homepage-content__section">
     <h2 class="homepage-content__section-heading">Posts</h2>
     <!-- Ranges through content/posts/*.md -->
     {{ $cutoffDate := time "2020-02-10" }}
     {{ $posts := where .Site.RegularPages "Type" "post" }}
     {{ $recentPosts := where .Site.RegularPages "Date" "ge" $cutoffDate }}
     <ul class="post-list">
-      {{ range first 10 ($recentPosts) }}
-      <li class="post-list__item">
-        <a href="{{.Permalink}}" class="post-list__link">{{.Title}}</a>
-        <small><time datetime="{{.Date}}" class="post-list__date">{{.Date.Format "2 January 2006"}}</time></small>
-      </li>
-    {{ end }}
+        {{ range first 10 ($recentPosts) }}
+        <li class="post-list__item">
+            <a href="{{.Permalink}}" class="post-list__link">{{.Title}}</a>
+            <small>
+                <time datetime="{{.Date}}" class="post-list__date">{{.Date.Format "2 January 2006"}}
+                </time>
+            </small>
+        </li>
+        {{ end }}
     </ul>
     <div class="nav">
-      <ul class="nav__items">
-        <li class="nav__item">
-          <a class="cta" href="/posts/">Archive</a>
-        </li>
-        <li class="nav__item">
-          <a class="cta" href="/posts/index.xml">RSS</a>
-        </li>
-      </ul>
+        <ul class="nav__items">
+            <li class="nav__item">
+                <a class="cta" href="/posts/">Archive</a>
+            </li>
+            <li class="nav__item">
+                <a class="cta" href="/posts/index.xml">RSS</a>
+            </li>
+        </ul>
     </div>
-  </section>
+</section>
 {{ end }}

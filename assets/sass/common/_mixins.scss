@@ -1,0 +1,42 @@
+@use '../common/media';
+
+@mixin availability-indicator($color) {
+  display: inline-block;
+  background-color: $color;
+  margin-right: 0.25em;
+  position: relative;
+
+  @include media.tablet-portrait-up {
+    left: -1.333333em;
+    top: 0.4em;
+    position: absolute;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    animation: pulse 3s infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &,
+  &::after {
+    border-radius: 100%;
+    height: .666666em;
+    width:  .666666em;
+  }
+
+  @keyframes pulse {
+    0% {
+      border: 0.1em solid rgba($color, 0.5);
+    }
+    33% {
+      border: 0.5em solid rgba($color, 0);
+    }
+    100% {
+      border: 0.5em solid rgba($color, 0);
+    }
+  }
+}
