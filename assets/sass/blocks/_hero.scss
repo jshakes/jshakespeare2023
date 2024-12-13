@@ -46,9 +46,21 @@
 }
 
 .hero__intro {
-	@include typography.h1;
-	
-	margin: 1em 0;
+	margin: 3em 0;
+
+	p {
+		@include typography.h1;
+
+		margin-bottom: 0.4em;
+	}
+
+	em {
+		font-style: normal;
+		background-image: linear-gradient(to bottom right, var(--accent-1) -75%, var(--accent-2) 100%);
+		background-clip: text;
+		color: transparent;
+		animation: gradient 15s ease-in infinite;
+	}
 }
 
 

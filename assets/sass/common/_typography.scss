@@ -5,12 +5,12 @@ $font-display: 'Overpass', sans-serif;
 $font-code: 'Ubuntu Mono', monospace;
 
 @mixin h1 {
-	font-size: 1.666666em;
+	font-size: 1.666em;
 	margin: 0;
-	line-height: 1.33333;
+	line-height: 1.125;
 	font-family: $font-display;
 
 	@include media.tablet-portrait-up {
-		font-size: 1.75em;
+		font-size: 2.4em;
 	}
 }
