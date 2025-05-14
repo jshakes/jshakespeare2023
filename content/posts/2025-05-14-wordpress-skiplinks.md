@@ -16,11 +16,9 @@ You can test whether skip-links are working on your WordPress FSE site by loadin
 
 If you don’t see the skip link, it’s likely that your template is missing a `<main>` element.
 
----
-
 ## How WordPress determines whether and where to add a skip link
 
-If you view the source of your page, you will see see the following snippet, which is added by `[wp_enqueue_block_template_skip_link](https://github.com/WordPress/WordPress/blob/6.4/wp-includes/theme-templates.php#L109C10-L109C45)`:
+If you view the source of your page, you will see the following snippet, which is added by [`wp_enqueue_block_template_skip_link`](https://github.com/WordPress/WordPress/blob/6.4/wp-includes/theme-templates.php#L109C10-L109C45):
 
 ```html
 <script id="wp-block-template-skip-link-js-after">
@@ -68,7 +66,8 @@ If you view the source of your page, you will see see the following snippet, whi
 
 Notice that if no main element is found (`skipLinkTarget`), the script exits early, meaning no skip link will be added.
 
-# How to add a<main> element in the Site Editor
+## How to add a `<main>` element in the Site Editor
+
 1. Open the WordPress Editor and navigate to the relevant template (e.g. “Page” or “Single”).
 2. Locate or create a **Group** block that wraps all of your primary content. Ideally, this Group should contain your page’s <h1> heading as its first child.
 3. If no suitable Group exists, select all the relevant blocks and press Cmd + G (or Ctrl + G on Windows) to group them.
