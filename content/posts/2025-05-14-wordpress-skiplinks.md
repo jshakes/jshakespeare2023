@@ -1,6 +1,6 @@
 ---
 date: 2025-05-14 05:00:52+00:00
-title: Fix Missing ‘Skip to Content’ Link in WordPress Block Themes
+title: Fix missing ‘Skip to Content’ link in WordPress block themes
 description:
 featured_image:
 featured_image_caption:
