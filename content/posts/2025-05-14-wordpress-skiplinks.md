@@ -14,9 +14,9 @@ One a11y feature that is available by default in WordPress 5.8 and later is the 
 
 You can test whether skip-links are working on your WordPress FSE site by loading a page and pressing `Tab`. You should see a link appear in the top-left corner of the page saying **“Skip to content.”** Pressing `Enter` while this link is in focus should shift focus past the navigation and into the main content area.
 
-If you don’t see the skip link, it’s likely that your template is missing a `<main>` element.
+If you don’t see the skip-link, it’s likely that your template is missing a `<main>` element.
 
-## How WordPress determines whether and where to add a skip link
+## How WordPress determines whether and where to add a skip-link
 
 If you view the source of your page, you will see the following snippet, which is added by [`wp_enqueue_block_template_skip_link`](https://github.com/WordPress/WordPress/blob/6.4/wp-includes/theme-templates.php#L109C10-L109C45):
 
@@ -64,7 +64,7 @@ If you view the source of your page, you will see the following snippet, which i
 </script>
 ```
 
-Notice that if no main element is found (`skipLinkTarget`), the script exits early, meaning no skip link will be added.
+Notice that if no main element is found (`skipLinkTarget`), the script exits early, meaning no skip-link will be added.
 
 ## How to add a `<main>` element in the Site Editor
 
