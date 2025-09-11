@@ -72,7 +72,7 @@ Notice that if no main element is found (`skipLinkTarget`), the script exits ear
 2. Locate or create a **Group** block that wraps all of your primary content. Ideally, this Group should contain your page’s <h1> heading as its first child.
 3. If no suitable Group exists, select all the relevant blocks and press Cmd + G (or Ctrl + G on Windows) to group them.
 4. With the Group block selected, open the **Block settings** sidebar.
-5. Under the **Advanced** section, find the **HTML element** dropdown and select <main>.
+5. Under the **Advanced** section, find the **HTML element** dropdown and select `<main>`.
 6. Save the template.
 7. Refresh the page. You should now see the “Skip to content” link appear as the first item to receive focus when pressing Tab.
 8. Repeat this process for any other templates that are missing a skip-link.
