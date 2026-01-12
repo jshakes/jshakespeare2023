@@ -10,9 +10,8 @@ You can hire me as a software engineer on a day rate or project rate. Most clien
 
 I specialize in front-end web development that incorporates UX best-practices. I have formal design training and I am able to build easy-to-use and visually delightful software without the need for costly design/engineering waterfall processes.
 
-I mostly work remotely from my home in London but can travel as needed.
-
-References and work examples available upon request.
+📍 I mostly work remotely from my home in London but can travel as needed.
+💁‍♂️ References and work examples available upon request.
 
 ### Expertise
 
