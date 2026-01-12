@@ -28,9 +28,9 @@ You can also hire me to consult on your next project. Some things I know a lot a
 
 ## Why should you hire me?
 
-> âJames is one of the top handful of individuals I've had the privilege of working with in my career.â
+> “James is one of the top handful of individuals I've had the privilege of working with in my career.”
 >
-> â Charles Edwards-Kuhn, Chief Product Officer at Taptap Send
+> — Charles Edwards-Kuhn, Chief Product Officer at Taptap Send
 
 I have over 15 years of professional software development experience in the UK and US. During that time I have worked with businesses of all shapes and sizes, from pre-seed startups to Fortune 500 companies. I have worked as an individual contributor and as a manager in high-performing engineering teams, as well as in 'army of one' cross-functional roles. I have been involved with every stage of the software development lifecycle and have written, tested, and shipped code that has been used by millions of people.
 
